@@ -34,3 +34,11 @@ nosetests.xml
 .mr.developer.cfg
 .project
 .pydevproject
+
+# Outputs
+*.png
+
+# Misc.
+
+frompaper/
+old/
