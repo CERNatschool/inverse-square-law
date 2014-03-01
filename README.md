@@ -17,7 +17,7 @@ python analysis.py
 
 ## Viewing the plot
 
-The plot is created in `r\_vs\_oosqrtNg.png`, which can be viewed in
+The plot is created in `r_vs_oosqrtNg.png`, which can be viewed in
 any image viewing software.
 
 ```bash
