@@ -38,6 +38,10 @@ nosetests.xml
 # Outputs
 *.png
 
+# Data
+*.zip
+data/
+
 # Misc.
 
 frompaper/
