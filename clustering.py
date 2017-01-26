@@ -1,7 +1,10 @@
 #!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
+#...for the MATH.
 import numpy as np
 
+# For handling the pixels in the Timepix data.
 from pixel import *
 
 ###/*! \brief Container class for Blobs (blobs).

@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-#=========================================
-# Analysis of the Inverse Square Law data
-#=========================================
+#========================================================
+# Analysis of the Inverse Square Law data (ROOT version)
+#========================================================
 #
 # See the README.md for more information.
 
@@ -28,8 +28,8 @@ plt.rcParams['ytick.major.pad']='8'
 from clustering import *
 
 # Uncomment these if you have ROOT installed on your system.
-#from ROOT import TGraphErrors
-#from ROOT import TF1
+from ROOT import TGraphErrors
+from ROOT import TF1
 
 # The class for handling data entries.
 class Entry:
@@ -185,22 +185,22 @@ if __name__=="__main__":
     # If you have ROOT installed, uncomment this section to produce the
     # m and c variables yourself.
     #
-    #datagraph = TGraphErrors(len(ra), ra, oosqrtNg, er, eoosqrtNg)
+    datagraph = TGraphErrors(len(ra), ra, oosqrtNg, er, eoosqrtNg)
     #
-    #fitB = TF1("fitB", "[0] * x + [1]", 39., 151.)
-    #fitB.SetParameter(0, 100.)
-    #fitB.SetParameter(1,   0.)
-    #datagraph.Fit("fitB", "R")
+    fitB = TF1("fitB", "[0] * x + [1]", 39., 151.)
+    fitB.SetParameter(0, 100.)
+    fitB.SetParameter(1,   0.)
+    datagraph.Fit("fitB", "R")
     #
-    #m = fitB.GetParameter(0)
-    #c = fitB.GetParameter(1)
+    m = fitB.GetParameter(0)
+    c = fitB.GetParameter(1)
     #
-    #datagraph.Draw("A*")
+    datagraph.Draw("A*")
 
     # If you're not using the ROOT functionality, we have provided the hard-coded
     # values. Comment these out if you're using the code above.
-    m =  0.002398
-    c = -0.003646
+    #m =  0.002398
+    #c = -0.003646
 
     print("*")
     print("*------------------------")
