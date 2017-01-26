@@ -8,8 +8,8 @@ http://dx.doi.org/10.1088/0031-9120/48/3/344
 In this paper, a CERN@school Timepix detector is used to count the
 photons emitted by an Americium-241 source at various distances.
 This is an ideal demonstration experiment for schools with both
-a detector and an Am-241 source -- and the code here may be used
-to analyse any data collected in doing so -- but in case neither
+a detector and an Am-241 source - and the code here may be used
+to analyse any data collected in doing so - but in case neither
 of those is available we have provided the data used in the paper
 so that the analysis may be repeated and discussed.
 
@@ -43,7 +43,7 @@ $ cd inverse-square-law
 
 ## Getting the data
 We have put the data used in 
-([Whyntie, 2013](http://dx.doi.org/10.1088/0031-9120/48/3/344))
+([Whyntie et al., 2013](http://dx.doi.org/10.1088/0031-9120/48/3/344))
 on [FigShare](http://figshare.com) so that you can recreate the analysis
 yourself, and test the code before using it with your own data.
 To obtain the data from the
@@ -93,14 +93,14 @@ eog r_vs_oosqrtNg.png &
 ```
 
 This is Figure 5 in
-([Whyntie, 2013](http://dx.doi.org/10.1088/0031-9120/48/3/344)).
+([Whyntie et al., 2013](http://dx.doi.org/10.1088/0031-9120/48/3/344)).
 
 
 ## Note for advanced users
 Some of the advanced analysis functionality requires
 CERN's ROOT software framework to be installed on your system.
 This has been commented out in `analysis.py`, but you can
-use `analysis_with_ROOT.py` if you're using a GridPP CernVM
+use `analysis_with_ROOT.py` if you're running a GridPP CernVM
 (or have otherwise installed ROOT in your system with Python
 integration):
 
@@ -111,19 +111,19 @@ $ python analysis_with_ROOT.py
 
 
 ## Acknowledgements
-CERN@school was supported by
+_CERN@school was supported by
 the UK [Science and Technology Facilities Council](http://www.stfc.ac.uk) (STFC)
 via grant numbers ST/J000256/1 and ST/N00101X/1,
 as well as a Special Award from the Royal Commission for the Exhibition of 1851.
 The CERN@school Collaboration would also like to acknowledge the support
 provided by the [GridPP Collaboration](http://www.gridpp.ac.uk)
 in terms of both computing resources and technical guidance from
-collaboration members.
+collaboration members._
 
 
 ## Useful links
 * [Whyntie et al., 2013](http://dx.doi.org/10.1088/0031-9120/48/3/344) - the original paper in Physics Education;
-* The [Am-241 dataset](https://dx.doi.org/10.6084/m9.figshare.949631.v1) on FigShare - as used in (Whyntie et al., 2013);
+* The [Am-241 dataset](https://dx.doi.org/10.6084/m9.figshare.949631.v1) on FigShare - as used in ([Whyntie et al., 2013](http://dx.doi.org/10.1088/0031-9120/48/3/344));
 * [Setting up a GridPP CernVM](http://doi.org/10.6084/m9.figshare.4552825.v1);
 * The [Institute for Research in Schools](http://researchinschools.org) (IRIS) homepage;
 * The [IRIS CERN@school website](http://researchinschools.org/CERN);
